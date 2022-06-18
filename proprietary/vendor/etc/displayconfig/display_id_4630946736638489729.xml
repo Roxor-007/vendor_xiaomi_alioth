@@ -22,12 +22,29 @@
             <nits>2.0</nits>
         </point>
         <point>
-            <value>0.62</value>
-            <nits>500.0</nits>
+            <value>0.8</value>
+            <nits>400.0</nits>
         </point>
         <point>
             <value>1.0</value>
-            <nits>800.0</nits>
+            <nits>500.0</nits>
         </point>
     </screenBrightnessMap>
+
+    <highBrightnessMode enabled="true">
+        <transitionPoint>0.8</transitionPoint>
+        <minimumLux>10000</minimumLux>
+        <timing>
+            <!-- allow for 30 minutes out of every 5 minutes -->
+            <timeWindowSecs>300</timeWindowSecs>
+            <timeMaxSecs>1800</timeMaxSecs>
+            <timeMinSecs>60</timeMinSecs>
+        </timing>
+        <refreshRate>
+            <minimum>120</minimum>
+            <maximum>120</maximum>
+        </refreshRate>
+        <thermalStatusLimit>moderate</thermalStatusLimit>
+        <allowInLowPowerMode>false</allowInLowPowerMode>
+    </highBrightnessMode>
 </displayConfiguration>
